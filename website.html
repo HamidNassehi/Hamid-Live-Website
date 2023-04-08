@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hamid Nassehi</title>
+	<link rel="stylesheet" href="website.css">
+</head>
+<body>
+	<header>
+		<h1>Hamid Nassehi</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <section id ="contact">
+	<section id="about">
+        <h2>👋🏽 Hey there! <br> <b> It's nice to meet you.</b></h2>
+        <div class="image-container">
+            <img src="hamid.JPG" alt="Your Image" class="circular-image">
+          </div>
+		<p> I am currently a senior at the University of Maryland, College Park studying to receive <br>
+            my BS in Computer Science with a foundation in programming, web development, <br>
+            and algorithms seeking a challenging
+            role in web and app development. <br>
+            Highly motivated to apply technical expertise and collaborate with a team to deliver<br>
+            innovative solutions that drive business success.</p>
+            <p> If you're looking to work with me or simply reach out to me, feel free to email me by clicking <a href="mailto:nsh.hamid@gmail.com">HERE</a> or at hnassehi@umd.edu.</p>
+    	</section>
+		<hr>
+	</section>
+	
+	<section id="experience">
+		<h6>Experience</h6>
+		
+		<div class="slideshow-container">
+		
+			<div class="mySlides fade">
+				<div class="numbertext"></div>
+				<img src="pandaprogrammer.png" style="width:100%" >
+				<div class="text">Panda Programmer</div>
+			</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext"></div>
+				<img src="IDCA.webp" style="width:100%">
+				<div class="text">IDCA - International Data <br>Center Authority</div>
+			</div>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+		
+		<script>
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) { slideIndex = 1 }
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				setTimeout(showSlides, 3000); // Change image every 3 seconds
+			}
+		</script>
+
+	<div class="timeline">
+		<div class="container left">
+			<div class="content">
+				<h2>Intern at IDCA (International Data Center Authority)</h2>
+				<p>April 2023 - Currently</p>
+				<ul>
+					<li>hi</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container right">
+			<div class="content">
+				<h2>Leader Teacher at Panda Programmer</h2>
+				<p>November 2021 - currently</p>
+				<ul>
+					<li>Instructed 150+ students, instructing Python or chosen language</li>
+					<li>Composed engaging lesson plans, allowing 150+ students to further their understanding of complex material</li>
+					<li>Documented student growth, material mastery, and engagement in sharing information with students and/or parents and
+					teachers to improve the effectiveness</li>
+					<li>Managing new languages being presented to students at an understandable rate</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="skills">
+		<hr>
+		<section id = "education">
+	<div class="circle-container">
+		<div class="circle">
+			<h4>Education</h4>
+			<ul>
+				<li>University of Maryland</li>
+				<li>Graduated in 2023</li>
+				<li>Bachelor of Computer Science</li>
+				<li>Concentration in Astronomy</li>
+			</ul>
+		</div>
+		<div class="circle">
+				<h4>Skills</h4>
+				<ul>
+					<li>HTML/ CSS/ JavaScript</li>
+					<li>React</li>
+					<li>SwiftUI</li>
+					<li>Java</li>
+					<li>C++</li>
+					<li>Python</li>
+				</ul>
+		</div>
+	</div>
+	</section>
+	<hr>
+	<h7>Copyright © 2023 Hamid Nassehi</h7>
+</section>
+
